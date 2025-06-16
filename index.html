@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KnobelKiste 🎮</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #1e1e1e;
+      --fg: #f0f0f0;
+      --accent: #ffcc00;
+      --box: #2a2a2a;
+      --muted: #aaa;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--bg);
+      color: var(--fg);
+    }
+
+    header {
+      background: #28a745;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      background: var(--box);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 12px #0005;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      height: 180px;
+      display: block;
+      margin: 1rem auto 0;
+      background: #000;
+    }
+
+    .ad {
+      text-align: center;
+      margin: 2rem 0;
+      padding: 1rem;
+      border: 1px dashed var(--muted);
+      background: #333;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    nav {
+      background: #111;
+      padding: 0.5rem;
+      text-align: center;
+      border-bottom: 2px solid #28a745;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    nav li a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav li a:hover {
+      color: #ffcc00;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>KnobelKiste 🎮</h1>
+  <p>Dein Portal für clevere Mini-Games</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#">Start</a></li>
+    <li><a href="#top">Top-Spiele</a></li>
+    <li><a href="#new">Neue Spiele</a></li>
+    <li><a href="#" onclick="showRandomGame()">Zufallsspiel</a></li>
+    <li><a href="#">Kontakt</a></li>
+  </ul>
+</nav>
+
+
+<main>
+
+  <section id="top">
+    <h2>Spiel 1: Flappy Guy</h2>
+    <p>Weiche Hindernissen aus, sammel Coins – ein simpler Klassiker im Retro-Stil.</p>
+    <iframe src="https://itch.io/embed/2234703" loading="lazy"></iframe>
+  </section>
+
+  <div class="ad">
+    <!-- Werbung / AdSense-Block -->
+    AdSense-Platzhalter
+  </div>
+
+  <section id="new">
+    <h2>Spiel 2: Peggy’s Post</h2>
+    <p>Sortier-Chaos an der Küste – das ruhigste Stress-Spiel seit Tetris.</p>
+    <iframe src="https://itch.io/embed/2048296" loading="lazy"></iframe>
+  </section>
+
+  <div class="ad">
+    <!-- Werbung / AdSense-Block -->
+    AdSense-Platzhalter
+  </div>
+
+  <section id="mario">
+    <h2>Spiel: NSMB Mario Vs Luigi – KKT's Mod</h2>
+    <p>Jump'n'Run trifft Meme-Kultur – absoluter Nonsens mit Mario-Charme.</p>
+    <iframe src="https://itch.io/embed/2522663" width="100%" height="167" loading="lazy">
+      <a href="https://kingkittyturnip.itch.io/kkts-gooffy-little-mod">NSMB Mario Vs Luigi – KKT's Gooffy little Mod</a>
+    </iframe>
+  </section>
+
+  <div class="ad">
+    <!-- Werbung / AdSense-Block -->
+    AdSense-Platzhalter
+  </div>
+
+  <section id="death">
+    <h2>Spiel: Death Sketchbook</h2>
+    <p>Skizziere die Wahrheit – ein kreatives Detektivspiel mit Zeichenmechanik.</p>
+    <iframe src="https://itch.io/embed/3289169" width="100%" height="167" loading="lazy">
+      <a href="https://korogames.itch.io/death-sketchbook">Death Sketchbook by koro.games, IRoRoI</a>
+    </iframe>
+  </section>
+
+  <div class="ad">
+    <!-- Werbung / AdSense-Block -->
+    AdSense-Platzhalter
+  </div>
+
+  <section id="kabuto">
+    <h2>Spiel: Kabuto Park</h2>
+    <p>Rasantes Arena-Chaos mit schrulligem Käfer-Charm – süchtig machend!</p>
+    <iframe src="https://itch.io/embed/3634844" width="100%" height="167" loading="lazy">
+      <a href="https://doottinygames.itch.io/kabuto-park">Kabuto Park by Doot Tiny Games</a>
+    </iframe>
+  </section>
+
+  <section id="forest">
+    <h2>Spiel: A Dark Forest</h2>
+    <p>Dunkel. Ruhig. Gruselig. Ein textlastiger Spaziergang durch das Unheimliche.</p>
+    <iframe src="https://itch.io/embed/2677660" width="100%" height="167" loading="lazy">
+      <a href="https://tinytakinteller.itch.io/the-best-game-ever">A Dark Forest by TinyTakinTeller</a>
+    </iframe>
+  </section>
+
+  <section id="gridle">
+    <h2>Spiel: Gridle</h2>
+    <p>Ein Mix aus Sudoku und Puzzle-Strategie – optisch simpel, mental knifflig.</p>
+    <iframe src="https://itch.io/embed/769244" width="100%" height="167" loading="lazy">
+      <a href="https://parsakaali.itch.io/gridle">Gridle by Parsakaali</a>
+    </iframe>
+  </section>
+
+  <section id="pvz">
+    <h2>Spiel: Plants vs. Zombies DS</h2>
+    <p>Der Klassiker in DS-Optik – tower defense mit Charme und Biss.</p>
+    <iframe src="https://itch.io/embed/2084318" width="100%" height="167" loading="lazy">
+      <a href="https://exploration.itch.io/plants-vs-zombies-ds">Plants Vs Zombies DS by Exploration</a>
+    </iframe>
+  </section>
+
+
+</main>
+
+<footer>
+  &copy; <span id="year"></span> KnobelKiste – Powered by Spaß und Wahnsinn
+</footer>
+
+<script>
+  function showRandomGame() {
+    const gameSections = [
+      "top",
+      "new",
+      "slide",
+      "net",
+      "death",
+      "mario",
+      "kabuto",
+      "forest",
+      "gridle",
+      "pvz"
+    ];
+
+    const chosenId = gameSections[Math.floor(Math.random() * gameSections.length)];
+    const element = document.getElementById(chosenId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  // Jahr im Footer aktualisieren
+  document.getElementById("year").textContent = new Date().getFullYear().toString();
+</script>
+
+
+</body>
+</html>
